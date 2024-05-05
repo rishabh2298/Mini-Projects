@@ -20,7 +20,7 @@ public class OpenAiSpringApplication {
 	
 	@Bean
 	public RestTemplate getRestTemplate() {
-		
+
 		RestTemplate restTemplate = new RestTemplate();
 		
 		restTemplate.getInterceptors().add((request, body, execution) -> {

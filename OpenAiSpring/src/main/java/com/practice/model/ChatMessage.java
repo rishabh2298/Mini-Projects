@@ -3,7 +3,7 @@ package com.practice.model;
 public class ChatMessage {
 	
 	private String role;
-	private String message;
+	private String content;
 	
 	
 	public ChatMessage() {
@@ -12,17 +12,24 @@ public class ChatMessage {
 	}
 	
 	
+	public ChatMessage(String role, String content) {
+		super();
+		this.role = role;
+		this.content = content;
+	}
+
+
 	public String getRole() {
 		return role;
 	}
 	public void setRole(String role) {
 		this.role = role;
 	}
-	public String getMessage() {
-		return message;
+	public String getcontent() {
+		return content;
 	}
-	public void setMessage(String message) {
-		this.message = message;
+	public void setcontent(String content) {
+		this.content = content;
 	}
 
 	
